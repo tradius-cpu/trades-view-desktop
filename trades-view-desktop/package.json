@@ -1,13 +1,14 @@
 {
   "name": "trades-view-desktop",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:trades-view-desktop": "node dist/trades-view-desktop/server/server.mjs"
+    "serve:ssr:trades-view-desktop": "node dist/trades-view-desktop/server/server.mjs",
+    "desktop:pack": "ng build --configuration production && electron-builder --config electron-builder.json"
   },
   "private": true,
   "packageManager": "npm@11.9.0",
